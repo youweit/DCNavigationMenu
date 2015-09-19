@@ -1,0 +1,6 @@
+framework module DCNavigationMenu {
+  umbrella header "DCNavigationMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
