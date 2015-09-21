@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DCNavigationMenu_Example', :exclusive => true do
+  pod "DCNavigationMenu", :path => "../"
+end
+
+target 'DCNavigationMenu_Tests', :exclusive => true do
+  pod "DCNavigationMenu", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
