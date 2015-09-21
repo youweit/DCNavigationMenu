@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "summary": "A short description of DCNavigationMenu.",
   "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DCNavigationMenu",
+  "homepage": "https://github.com/youweit/DCNavigationMenu",
   "license": "MIT",
   "authors": {
     "Youwei Teng": "ranyouwei3@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DCNavigationMenu.git",
+    "git": "https://github.com/youweit/DCNavigationMenu.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -19,7 +19,10 @@
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "DCNavigationMenu": [
-      "Pod/Assets/*.png"
+      "Pod/Assets/*.pdf"
     ]
-  }
+  },
+  "resources": [
+    ""
+  ]
 }

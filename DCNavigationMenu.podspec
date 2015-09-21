@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DCNavigationMenu"
+  s.homepage         = "https://github.com/youweit/DCNavigationMenu"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Youwei Teng" => "ranyouwei3@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DCNavigationMenu.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/youweit/DCNavigationMenu.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -31,8 +31,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'DCNavigationMenu' => ['Pod/Assets/*.png']
+    'DCNavigationMenu' => ['Pod/Assets/*.pdf']
   }
+  s.resources = [""]
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
