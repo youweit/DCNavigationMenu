@@ -22,7 +22,7 @@ pod "DCNavigationMenu"
 
 ## Author
 
-Youwei Teng, ranyouwei3@gmail.com
+Youwei Teng, teng@dcard.cc
 
 ## License
 
