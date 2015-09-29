@@ -16,6 +16,7 @@
 @property (nonatomic, copy) DCNavigationMenuConfigureItemBlock configureCellBlock;
 @property (nonatomic, assign) CGRect initialFrame;
 @property (nonatomic, assign) CGRect finalFrame;
+@property (nonatomic, strong) UIView *dimmingView;
 @end
 
 @implementation DCNavigationMenuCollectionView
@@ -125,6 +126,9 @@
 
 
 - (void)show {
+	if (self.dimmingView.superview == nil) {
+		[self.parentView insertSubview:self.dimmingView belowSubview:self];
+	}
 	if (self.superview == nil) {
 		[self.parentView addSubview:self];
 	}
@@ -139,9 +143,10 @@
 			break;
 		}
 		case DCNavigationMenuViewStyleDown: {
-			[UIView animateWithDuration:0.5 animations:^{
+			[UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
 				[self setFrame:self.finalFrame];
-			}];
+				self.dimmingView.alpha = 0.5;
+			} completion:NULL];
 			break;
 		}
 		default: {
@@ -152,15 +157,21 @@
 }
 
 - (void)hide {
-	
-	[UIView animateWithDuration:0.5 animations:^{
-		 [self setFrame:self.initialFrame];
-	} completion:^(BOOL finished) {
-//		if (finished) {
-//			[self removeFromSuperview];
-//		}
-	}];
+
+	[UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+		[self setFrame:self.initialFrame];
+		self.dimmingView.alpha = 0;
+	} completion:NULL];
 }
 
+
+- (UIView *)dimmingView {
+	if(_dimmingView == nil) {
+		_dimmingView = [[UIView alloc] initWithFrame:self.finalFrame];
+		_dimmingView.backgroundColor = [UIColor blackColor];
+		_dimmingView.alpha = 0;
+	}
+	return _dimmingView;
+}
 
 @end

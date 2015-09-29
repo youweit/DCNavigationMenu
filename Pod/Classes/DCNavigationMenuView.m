@@ -25,6 +25,7 @@
 @property (nonatomic, weak) UIView *parentView;
 @property (nonatomic, assign) BOOL didSetupContraints;
 @property (nonatomic, strong) DCNavigationMenuCollectionView *collectionView;
+
 @end
 
 
@@ -290,6 +291,5 @@
     }
     return _containterView;
 }
-
 
 @end
