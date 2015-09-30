@@ -47,7 +47,7 @@
         _collectionView.dataSource                                = self;
         _collectionView.alwaysBounceHorizontal                    = NO;
         _collectionView.showsHorizontalScrollIndicator            = NO;
-        _collectionView.backgroundColor                           = [UIColor greenColor];
+        _collectionView.backgroundColor                           = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0];
         _collectionView.contentInset                              = UIEdgeInsetsMake(70, 0, 6, 0);
 
         [_collectionView registerClass:NSClassFromString(_cellIdentifier) forCellWithReuseIdentifier:_cellIdentifier];
