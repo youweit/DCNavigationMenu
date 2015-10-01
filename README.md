@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/DCNavigationMenu.svg?style=flat)](http://cocoapods.org/pods/DCNavigationMenu)
 
 ## Usage
+ <img src="https://raw.githubusercontent.com/youweit/DCNavigationMenu/master/screenshot/sreenshoot.gif" alt="DCLazyInstantiate" title="DCNavigationMenu">
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
