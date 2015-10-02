@@ -8,6 +8,17 @@
 ## Usage
  <img src="https://raw.githubusercontent.com/youweit/DCNavigationMenu/master/screenshot/sreenshoot.gif" alt="DCLazyInstantiate" title="DCNavigationMenu">
 
+```objective-c
+CGRect frame = CGRectMake(0.0, 0.0, 200.0, self.navigationController.navigationBar.bounds.size.height);
+_navigationMenuItem = [[DCNavigationMenuView alloc] initWithFrame:frame
+															style:DCNavigationMenuViewStyleDown
+														 delegate:self parentView:self.view
+															items:self.menuItems
+												   configureBlock:^(DCNavigationMenuDefaultCollectionViewCell *cell, id item) {
+													   cell.title.text = item;
+												   }];
+```
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
