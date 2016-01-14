@@ -21,7 +21,7 @@ _navigationMenuItem = [[DCNavigationMenuView alloc] initWithFrame:frame
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Installation
+## Installation (WIP)
 
 DCNavigationMenu is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -32,7 +32,7 @@ pod "DCNavigationMenu"
 
 ## Author
 
-Youwei Teng, teng@dcard.cc
+youweit (Youwei Teng)
 
 ## License
 
